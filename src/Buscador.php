@@ -1,5 +1,7 @@
 <?php
 
+namespace Gustavodell\BuscadorCursos;
+
 require './vendor/autoload.php';
 
 use GuzzleHttp\Client;

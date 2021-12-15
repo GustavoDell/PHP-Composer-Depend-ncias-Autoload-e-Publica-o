@@ -3,6 +3,7 @@
     "description": "Projeto que busca os cursos no site da Alura",
     "type": "library",
     "autoload": {
+        "files": ["./functions.php"],
         "psr-4": {
             "Gustavodell\\BuscadorCursos\\": "src/"
         }
