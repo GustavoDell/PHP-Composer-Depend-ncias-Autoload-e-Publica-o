@@ -25,8 +25,21 @@
         "phpunit/phpunit": "^9"
     },
     "scripts": {
-        "test": "phpunit tests\\TestBuscadorDeCursos.php",
-        "cs": "phpcs --standard=PSR12 src/",
-        "phan": "phan --allow-polyfill-parser"
+        "test": "vendor/bin/phpunit tests//TestBuscadorDeCursos.php",
+        "cs": "vendor/bin/phpcs --standard=PSR12 src/",
+        "cbf_arrumar": "vendor/bin/phpcbf --standard=PSR12 src/",
+        "phan": "vendor/bin/phan --allow-polyfill-parser",
+        "check": [
+            "@phan",
+            "@cbf_arrumar",
+            "@cs",
+            "@test"
+        ],
+        "scripts-descriptions": {
+            "check": "Roda as verificações do código. PHAN, PHPCS e PHPUNIT"
+        },
+        "post-update-cmd": [
+            "@test"
+        ]
     }
 }

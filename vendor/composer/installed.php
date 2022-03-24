@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '60502708adb4100cd7829ed45e79c714856a8a09',
+        'reference' => '48cafd4434400f3de9c520a7890e7d0fcad470ad',
         'name' => 'gustavodell/buscador-cursos',
         'dev' => true,
     ),
@@ -61,7 +61,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '60502708adb4100cd7829ed45e79c714856a8a09',
+            'reference' => '48cafd4434400f3de9c520a7890e7d0fcad470ad',
             'dev_requirement' => false,
         ),
         'guzzlehttp/guzzle' => array(
